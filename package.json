@@ -1,0 +1,59 @@
+{
+  "name": "express-ws",
+  "version": "1.0.0",
+  "description": "TDD with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --watch",
+    "lint": "eslint .",
+    "start": "cross-env NODE_ENV=development nodemon index"
+  },
+  "author": "Jorge Magnani",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "node-gyp": "^8.3.0",
+    "sequelize": "^6.9.0",
+    "sqlite3": "^5.0.0",
+    "tar": "^6.1.11"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "eqeqeq": "warn",
+      "prettier/prettier": "warn",
+      "singleQuote": true
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}

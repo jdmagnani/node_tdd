@@ -1,0 +1,10 @@
+{
+    "database": {
+        "database": "db_dev",
+        "username": "db_user",
+        "password": "db_pass",
+        "dialect": "sqlite",
+        "storage": "./database_dev.sqlite",
+        "logging": false
+    }
+}
